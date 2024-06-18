@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Сигнал</title>
+    <link rel="icon" href="../images/logo.png" width="100" height="100">
+    <link rel="stylesheet" href="../styles/form.css">
+    </head>
+<body>
+    
+    <nav>
+        <a href="index.html">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Лого">
+            </div>
+        </a>
+        <ul>
+            <li><a class="nav-item" href="math.html">Математика</a></li>
+            <li><a class="nav-item" href="programming.html">Програмиране</a></li>
+            <li><a class="nav-item" href="form.html">Сигнал</a></li>
+            <li><a class="nav-item" id="nav-button" href="about-us.html" class="AboutUs">За нас</a></li>
+        </ul>
+
+
+    </nav>
+    
+    <div class="container">
+        <h2>Форма за сигнали</h2>
+        <form>
+            <div class="form-group">
+                <label for="signalReason">Причина за сигнала</label>
+                <select id="signalReason" name="signalReason">
+                    <option value="wrongInformation">Грешна информация</option>
+                    <option value="problemTests">Проблем с тестовете</option>
+                    <option value="other">Друго</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="firstName">Име</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="secondName">Презиме</label>
+                <input type="text" id="secondName" name="secondName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Фамилия</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="">Имейл</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Телефон за връзка</label>
+                <input type="text" id="number" name="number" required>
+            </div>
+            <div class="form-group">
+                <a id="send-button" href="mailto:vvvalchanova23@codingburgas.bg">Изпрати</a>
+            </div>
+        </div>
+        </form>
+        <br>
+        <footer>
+        
+            <ul class="social_icon">
+                <li><a href="https://www.instagram.com/double_winners?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="math.html">Математика</a></li>
+                <li><a href="programming.html">Програмиране</a></li>
+                <li><a href="form.html">Сигнал</a></li>
+                <li><a href="about-us.html">За нас</a></li>
+            </ul>
+            <p>Double Winners</p>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+</body>
+</html>
