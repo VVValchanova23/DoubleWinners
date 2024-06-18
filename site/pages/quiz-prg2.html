@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Тест </title>
+    <link rel="stylesheet" href="../styles/design.css">
+    <link rel="icon" href="../images/logo.png" width="100" height="100">
+</head>
+ 
+<body>
+ 
+    <nav>
+        <a href="index.html">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Лого">
+            </div>
+        </a>
+        <ul>
+            <li><a class="nav-item" href="math.html">Математика</a></li>
+            <li><a class="nav-item" href="programming.html">Програмиране</a></li>
+            <li><a class="nav-item" href="form.html">Сигнал</a></li>
+            <li><a class="nav-item" id="nav-button" href="about-us.html" class="AboutUs">За нас</a></li>
+        </ul>
+    </nav>
+   
+ 
+    <div class="quiz-container">
+        <h1>Тест за проверка на знанията</h1>
+        <div class="question">
+           <p> 1. Какъв код трябва да добавите, за да извеждате "Hello, World!"? </p>
+            <div class="options">
+                <input type="radio" id="q1a" name="q1" value="A">
+                <label for="q1a" class="incorrect">A. print("Hello, World!") << endl;</label>
+                <input type="radio" id="q1b" name="q1" value="B">
+                <label for="q1b" class="correct">B. cout << "Hello, World!"</label>
+                <input type="radio" id="q1c" name="q1" value="C">
+                <label for="q1c" class="incorrect">C.  Console.WriteLine("Hello, World!")</label>
+                <input type="radio" id="q1d" name="q1" value="D">
+                <label for="q1d" class="incorrect">D. echo "Hello, World!</label>
+ 
+ 
+            </div>
+        </div>
+        <br>
+        <div class="question">
+            <p>2. Какъв код трябва да добавите, за да проверите дали числото е четно или нечетно?
+            <div class="options">
+                <input type="radio" id="q2a" name="q2" value="A">
+                <label for="q2a" class="correct">A. if (num % 2 == 0) { cout << "Even"; } else { cout << "Odd"; };</label>
+                <input type="radio" id="q2b" name="q2" value="B">
+                <label for="q2b" class="incorrect">B.  if (num / 2 == 0) { cout << "Even"; } else { cout << "Odd"; };</label>
+                <input type="radio" id="q2c" name="q2" value="C">
+                <label for="q2c" class="incorrect">C. if (num % 3 == 0) { cout << "Even"; } else { cout << "Odd"; };</label>
+                <input type="radio" id="q2d" name="q2" value="D">
+                <label for="q2d" class="incorrect">D. if (num / 3 == 0) { cout << "Even"; } else { cout << "Odd"; };</label>
+            </div>
+        </div>
+        <br>
+        <div class="question">
+            <p>3. Какъв ще бъде резултатът от следния израз: 5 + 3 * 2?</p>
+            <div class="options">
+                <input type="radio" id="q3a" name="q3" value="A">
+                <label for="q3a" class="incorrect">A. for (int i = 1; i <= 10; i += 2) { cout << i << " "; }</label>
+                <input type="radio" id="q3b" name="q3" value="B">
+                <label for="q3b" class="correct">B. for (int i = 1; i <= 10; ++i) { cout << i << " "; }</label>
+                <input type="radio" id="q3c" name="q3" value="C">
+                <label for="q3c" class="incorrect">C. for (int i = 1; i < 10; ++i) { cout << i << " "; }</label>
+                <input type="radio" id="q3d" name="q3" value="D">
+                <label for="q3d" class="incorrect">D. for (int i = 0; i < 10; ++i) { cout << i << " "; }</label>
+            </div>
+        </div>
+        <br>
+        <div class="question">
+        <p>4. Как ще въведете 5 числа в масива?
+        </p>
+        <div class="options">
+            <input type="radio" id="q4a" name="q4" value="A">
+            <label for="q4a" class="incorrect">A. for (int i = 0; i <= 5; ++i) { cin >> arr[i]; }</label>
+            <input type="radio" id="q4b" name="q4" value="B">
+            <label for="q4b" class="correct">B. for (int i = 0; i < 5; ++i) { cin >> arr[i]; }</label>
+            <input type="radio" id="q4c" name="q4" value="C">
+            <label for="q4c" class="incorrect">C. for (int i = 1; i < 5; ++i) { cin >> arr[i]; }</label>
+            <input type="radio" id="q4d" name="q4" value="D">
+            <label for="q4d" class="incorrect">D. for (int i = 0; i < 4; ++i) { cin >> arr[i]; }</label>
+        </div>
+    </div>
+    <br>
+    <div class="question">
+    <p>5. Как ще извеждате числата от масива?</p>
+    <div class="options">
+        <input type="radio" id="q5a" name="q5" value="A">
+        <label for="q5a" class="correct">A. for (int i = 0; i < 5; ++i) { cout << arr[i] << " "; };</label>
+        <input type="radio" id="q5b" name="q5" value="B">
+        <label for="q5b" class="incorrect">B. for (int i = 0; i <= 5; ++i) { cout << arr[i] << " "; }</label>
+        <input type="radio" id="q5c" name="q5" value="C">
+        <label for="q5c" class="incorrect">C. for (int i = 1; i < 5; ++i) { cout << arr[i] << " "; }</label>
+        <input type="radio" id="q5d" name="q5" value="D">
+        <label for="q5d" class="incorrect">D. for (int i = 0; i < 4; ++i) { cout << arr[i] << " "; }</label>
+    </div>
+</div>
+<br>
+<div class="question">
+<p>6. Какво трябва да съдържа функцията 'square', за да връща квадрата на числото?</p>
+<div class="options">
+    <input type="radio" id="q6a" name="q6" value="A">
+    <label for="q6a" class="incorrect">A. return num - num;</label>
+    <input type="radio" id="q6b" name="q6" value="B">
+    <label for="q6b" class="incorrect">B. return num / num;</label>
+    <input type="radio" id="q6c" name="q6" value="C">
+    <label for="q6c" class="correct">C. return num * num;</label>
+    <input type="radio" id="q6d" name="q6" value="D">
+    <label for="q6d" class="incorrect">D. return num + num;</label>
+</div>
+</div>
+<br>
+<div class="question">
+<p>7. Как ще създадете вложен цикъл за отпечатване на таблицата за умножение?</p>
+<div class="options">
+    <input type="radio" id="q7a" name="q7" value="A">
+    <label for="q7a" class="incorrect">A. for (int i = 1; i < 5; ++i) { for (int j = 1; j < 5; ++j) { cout << i * j << " "; } cout << endl; }</label>
+    <input type="radio" id="q7b" name="q7" value="B">
+    <label for="q7b" class="correct">B. for (int i = 1; i <= 5; ++i) { for (int j = 1; j <= 5; ++j) { cout << i * j << " "; } cout << endl; }</label>
+    <input type="radio" id="q7c" name="q7" value="C">
+    <label for="q7c" class="incorrect">C. for (int i = 1; i <= 5; ++i) { for (int j = 1; j <= 5; ++j) { cout << i - j << " "; } cout << endl; } <stdio.h></label>
+    <input type="radio" id="q7d" name="q7" value="D">
+    <label for="q7d" class="incorrect">D. for (int i = 1; i <= 5; i++) { for (int j = 1; j <= 5; j++) { cout << i + j << " "; } cout << endl; }
+        <iostream.h></label>
+</div>
+</div>
+<br>
+<div class="question">
+<p>8. Какво трябва да добавите, за да съберете двете числа и да изведете резултата?
+</p>
+<div class="options">
+    <input type="radio" id="q8a" name="q8" value="A">
+    <label for="q8a" class="incorrect">A. cout << "Sum: " << a / b << endl;</label>
+    <input type="radio" id="q8b" name="q8" value="B">
+    <label for="q8b" class="incorrect">B. cout << "Sum: " << a * b << endl;</label>
+    <input type="radio" id="q8c" name="q8" value="C">
+    <label for="q8c" class="correct">C. cout << "Sum: " << a + b << endl;</label>
+    <input type="radio" id="q8d" name="q8" value="D">
+    <label for="q8d" class="incorrect">D. cout << "Sum: " << a - b << endl;</label>
+</div>
+</div>
+<br>
+<div class="question">
+    <p>9. Какво трябва да добавите, за да проверите дали числото е положително, отрицателно или нула?</p>
+    <div class="options">
+        <input type="radio" id="q9a" name="q9" value="A">
+        <label for="q9a" class="incorrect">A. if (num < 0) { cout << "Positive"; } else if (num > 0) { cout << "Negative"; } else { cout << "Zero"; }</label>
+        <input type="radio" id="q9b" name="q9" value="B">
+        <label for="q9b" class="correct">B. if (num > 0) { cout << "Positive"; } else if (num < 0) { cout << "Negative"; } else { cout << "Zero"; }</label>
+        <input type="radio" id="q9c" name="q9" value="C">
+        <label for="q9c" class="incorrect">C. if (num == 0) { cout << "Positive"; } else if (num > 0) { cout << "Negative"; } else { cout << "Zero"; }</label>
+        <input type="radio" id="q9d" name="q9" value="D">
+        <label for="q9d" class="incorrect">D. if (num == 0) { cout << "Zero"; } else { cout << "Positive"; }</label>
+    </div>
+    </div>
+    <br>
+        <div class="question">
+            <p>10. Какво трябва да добавите, за да въведете и изведете символния низ?
+            </p>
+            <div class="options">
+                <input type="radio" id="q10a" name="q10" value="A">
+                <label for="q10a" class="incorrect">A. cin >> str; cout << "You entered: " << str;</label>
+                <input type="radio" id="q10b" name="q10" value="B">
+                <label for="q10b" class="incorrect">B. cin.get(str); cout << "You entered: " << str;</label>
+                <input type="radio" id="q10c" name="q10" value="C">
+                <label for="q10c" class="correct">C. cin.getline(str, 100); cout << "You entered: " << str;</label>
+                <input type="radio" id="q10d" name="q10" value="D">
+                <label for="q10d" class="incorrect">D. cin.read(str); cout << "You entered: " << str;</label>
+            </div>
+            </div>
+    </div>
+    <footer>
+        
+        <ul class="social_icon">
+            <li><a href="https://www.instagram.com/double_winners"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="math.html">Математика</a></li>
+            <li><a href="programming.html">Програмиране</a></li>
+            <li><a href="form.html">Сигнал</a></li>
+            <li><a href="about-us.html">За нас</a></li>
+        </ul>
+        <p>Double Winners</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
