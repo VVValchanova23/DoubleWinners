@@ -1,0 +1,104 @@
+body {
+  background: #488b8f;
+  overflow: hidden;
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: -15%;
+  color: #faf9f9;
+ font-family:'Times New Roman', Times, serif;
+  margin-top: 10%;
+  transition: .6s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel-wrapper {
+  top: 10px;
+  height: 45em;
+  border-radius: 50px;
+  position: relative;
+  width: 100%;
+  display: block;
+  border: 2px solid white;
+  
+}
+
+.carousel-item {
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  text-align: center;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 12px;
+  width: 20px;
+  height: 20px;
+  transition: 0.5s;
+}
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('../images/Homepage/math.jpg');
+  background-size: cover;
+}
+.item-2 {
+  background: url('../images/Homepage/programming.jpg');
+  background-size: cover;
+}
+
+
+*:target ~ .item-1 {
+  opacity: 0;
+}
+#item-1:target ~ .item-1 {
+  opacity: 1;
+
+}
+#item-2:target ~ .item-2 {
+  z-index: 3;
+  opacity: 1;
+} 
+
+.photo {
+  padding-left: 10%;
+  width: 70%;
+  height: 20%;
+  display: block;
+  transition: .5s;
+}
+
+.photo:hover > h1{
+  transform: scale(1.2);
+}
+
